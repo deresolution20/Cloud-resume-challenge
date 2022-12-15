@@ -51,7 +51,7 @@ deploy-infra:
 	sam build && aws-vault exec my-user --no-session -- sam deploy
 
 deploy-site:
-	aws-vault exec my-user --no-session -- aws s3 sync ./resume-site s3://my-fantastic-website
+	aws-vault exec my-user --no-session -- aws s3 sync ./resume-site s3://cloud-resume-challenge-bneal
 ```
 
 ## Upload an index.html
